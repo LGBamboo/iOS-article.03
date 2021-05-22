@@ -22,6 +22,7 @@
     ▪ C++静态对象加载、调用ObjC的 +load 函数
 
   •  **程序执行**
+  
     ·    1.main函数
     
     ·    2.执行UIApplicationMain函数
