@@ -15,7 +15,7 @@
 
 对于用 __block 修饰的外部变量引用，block 是`复制其引用地址`来实现访问的。block可以修改__block 修饰的外部变量的值。
 
-![](//upload-images.jianshu.io/upload_images/2530231-8eec70c35c97d45f.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/252/format/webp)
+![](https://upload-images.jianshu.io/upload_images/13277235-49129ad408ace6c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 **3、Block的存储域及copy操作**
 
