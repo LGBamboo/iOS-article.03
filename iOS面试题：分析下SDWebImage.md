@@ -42,7 +42,7 @@
 
 20.SDWebImagePrefetcher 可以预先下载图片，方便后续使用。
 
-![SDWebImage原理图](https://upload-images.jianshu.io/upload_images/3788243-cf9c367301b36091.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp)
+![](https://upload-images.jianshu.io/upload_images/13277235-fa8be0a6854def42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![SDWebImage原理图](https://upload-images.jianshu.io/upload_images/3788243-e539ccd72dc07274.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp)
 
