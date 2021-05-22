@@ -237,8 +237,6 @@ imageURLStorageKey:{state:url}
 * 9.对GIF图片的处理
 * 10.对WebP图片的处理。
 
-收录：[原文地址](https://www.jianshu.com/p/13c0cdc7987e)
-
 ***
 ### 更多精选大厂 · iOS面试题答案PDF文集
 
