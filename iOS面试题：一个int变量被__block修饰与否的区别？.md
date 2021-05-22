@@ -9,7 +9,7 @@
 
 对于 block 外的变量引用，block 默认是将其`复制到其数据结构中`来实现访问的。也就是说block的自动变量截获只针对block内部使用的自动变量, 不使用则不截获, 因为截获的自动变量会存储于block的结构体内部, 会导致block体积变大。特别要注意的是默认情况下block只能访问不能修改局部变量的值。
 
-![](//upload-images.jianshu.io/upload_images/2530231-fdfd7e7c8133b4c7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/319/format/webp)
+![](https://upload-images.jianshu.io/upload_images/13277235-1e7dd4fb590846d4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 **2、 __block 修饰的外部变量**
 
