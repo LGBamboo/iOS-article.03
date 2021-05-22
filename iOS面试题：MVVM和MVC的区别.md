@@ -4,7 +4,7 @@
 
 ##### 1.  MVC
 
-![MVC](//upload-images.jianshu.io/upload_images/1653926-9abf7d3219aa5b1c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/974/format/webp)
+![](https://upload-images.jianshu.io/upload_images/13277235-7cbfc9379b1bb409.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 **MVC的弊端**
 
@@ -29,7 +29,7 @@
 
 一种可以很好地解决`Massive View Controller`问题的办法就是将 Controller 中的展示逻辑抽取出来，放置到一个专门的地方，而这个地方就是 `viewModel` 。MVVM衍生于MVC，是对 MVC 的一种演进，它促进了 UI 代码与业务逻辑的分离。它正式规范了视图和控制器紧耦合的性质，并引入新的组件。他们之间的结构关系如下：
 
-![MVVM](//upload-images.jianshu.io/upload_images/1653926-7ed45d1af126df79.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp)
+![](https://upload-images.jianshu.io/upload_images/13277235-d994a9a6d76c0956.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ###### 2.1 MVVM 的基本概念
 
