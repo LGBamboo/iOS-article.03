@@ -1,4 +1,4 @@
-# iOS面试题：NSOperation 与 GCD 的主要区别？
+# NSOperation 与 GCD 的主要区别？
 
 * **1.** GCD 的核心是 C 语言写的系统服务，执行和操作简单高效，因此 NSOperation 底层也通过 GCD 实现，换个说法就是 NSOperation 是对 GCD 更高层次的抽象，这是他们之间最本质的区别。因此如果希望自定义任务，建议使用 NSOperation；
 
