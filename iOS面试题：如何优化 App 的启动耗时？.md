@@ -13,7 +13,7 @@ iOS 的 App 启动主要分为以下步骤：
 * **加载 MachO 的依赖库（这些依赖库也是 MachO 格式的文件）**。dyld 从可执行 MachO 文件的依赖开始, 递归加载所有依赖的动态库。 动态库包括：iOS 中用到的所有系统动态库：加载 OC runtime 方法的 libobjc，系统级别的 libSystem（例如 libdispatch(GCD) 和 libsystem_blocks(Block)）；其他 App 自己的动态库。根据 Apple 的描述，大部分 App 所加载的库在 100~400 个。不过 iOS 系统库已经被特殊优化过，如提前加入共享缓存，提前做好地址修正等。
 
 * **Fix-ups（地址修正），包括 rebasing 和 binding 等**。ASLR + PIE 技术增强了程序的安全性，使得依赖固定地址进行攻击的方法失效，但也增加了程序自身的复杂度，MachO 文件的 rebase 和 bind info 等部分以及启动时的 fix-ups 地址修正阶段就是配合它而产生的。
-* 
+
 * **ObjC 环境配置**。经过了 MachO 程序和依赖库的加载以及地址修正之后，dyld 所做的大部分事情已经完成了。在这一阶段，dyld 开始对主程序的依赖库进行初始化工作，而初始化的执行部分会回调到依赖库内部执行，如 ObjC 的运行时环境所在的 libobjc.A.dylib 以及 libdispatch.dylib 等。ObjC Setup 的过程，主要是对 ObjC 数据进行关联注册：
 * 1）dyld 将主程序 MachO 基址指针和包含的 ObjC 相关类信息传递到 libobjc；
 * 2）ObjC Runtime 从 __DATA 段中获取 ObjC 类信息，由于 ObjC 是动态语言，可以通过类名获取其实例，所以 Runtime 维护了一个映射所有类的全局类名表。当加载的数据包含了类的定义，类的名字就需要注册到全局表中；
@@ -24,7 +24,7 @@ iOS 的 App 启动主要分为以下步骤：
 * 1）通过 ObjC Runtime 在 dyld 注册的通知，当 MachO 镜像准备完毕后，dyld 会回调到 ObjC 中执行 +load() 方法，包括以下步骤：a）获取所有 non-lazy class 列表；b)按继承以及 category 的顺序将类排入待加载列表；c）对待加载列表中的类进行方法判断并调用 +load() 方法。
 * 2）执行 C/C++ 初始化构造器，如通过 attribute((constructor)) 注解的函数。
 * 3）如果包含 C++，则 dyld 同样会回调到 libc++ 库中对全局静态变量、隐式初始化等进行调用。
-* 
+
 * **查找并跳转到 main() 函数入口**。到了最后，dyld 回到 Load command，找到 LC_MAIN，拿到 entryoff 再加上 MachO 在内存的加载首地址（首地址就是内核传来的 slide 偏移）就得到了 main() 的入口地址，从而进入我们显式的程序逻辑。
 
 **进入 main() -> UIApplicationMain -> 初始化回调 -> 显示UI。**
