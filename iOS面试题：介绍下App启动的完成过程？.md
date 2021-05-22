@@ -35,7 +35,7 @@
     
     ▪     　　4.创建应用程序的Main Runloop循环
     
-    ▪     3.UIApplicationDelegate对象开始处理监听到的事件
+    ▪ 3.UIApplicationDelegate对象开始处理监听到的事件
     
     ▪     　　1.程序启动成功之后，首先调用application:didFinishLaunchingWithOptions:方法,
     ▪     　　如果info.plist文件中配置了启动storyboard文件名，则加载storyboard文件。
