@@ -23,20 +23,20 @@
 
   •  **程序执行**
   
-    ·    1.main函数
+    ▪ 1.main函数
     
-    ·    2.执行UIApplicationMain函数
+    ▪ 2.执行UIApplicationMain函数
     
-    ·    　　1.创建UIApplication对象
+    ▪     　　1.创建UIApplication对象
     
-    ·    　　2.创建UIApplicationDelegate对象并复制
+    ▪     　　2.创建UIApplicationDelegate对象并复制
     
-    ·    　　3.读取配置文件info.plist，设置程序启动的一些属性，(关于info.plist的内容可网上搜索下)
+    ▪     　　3.读取配置文件info.plist，设置程序启动的一些属性，(关于info.plist的内容可网上搜索下)
     
-    ·    　　4.创建应用程序的Main Runloop循环
+    ▪     　　4.创建应用程序的Main Runloop循环
     
-    ·    3.UIApplicationDelegate对象开始处理监听到的事件
+    ▪     3.UIApplicationDelegate对象开始处理监听到的事件
     
-    ·    　　1.程序启动成功之后，首先调用application:didFinishLaunchingWithOptions:方法,
-    ·    　　如果info.plist文件中配置了启动storyboard文件名，则加载storyboard文件。
-    ·    　　如果没有配置，则根据代码来创建UIWindow--->UIWindow的rootViewController-->显示
+    ▪     　　1.程序启动成功之后，首先调用application:didFinishLaunchingWithOptions:方法,
+    ▪     　　如果info.plist文件中配置了启动storyboard文件名，则加载storyboard文件。
+    ▪     　　如果没有配置，则根据代码来创建UIWindow--->UIWindow的rootViewController-->显示
