@@ -1,3 +1,5 @@
+### 返回目录:[全网各大厂iOS面试题-题集大全](https://github.com/LGBamboo/iOS-Advanced)
+
 # 讲一下MVC和MVVM，MVP？
 
 * 简单来说**MVC**（Model View Controller）就是模型（Model）- 视图（View）-控制器(Controller)的缩写，Model是用来处理数据，View是用来展示界面，Cotroller是用来调节他们两者之间的交互。
@@ -16,5 +18,3 @@ View和Model之间不再直接进行交互，而是通过Presenter来进行的�
   **优点**：使其数据流向更加清晰（脑补一下就是云对雨，x对风，大陆对长空）。一一对应起来。
 
   **缺点**：这种架构没有统一的实现方式，每个人各有特色。我接触过得各有不同。而且有一定的学习成本。（不懂得人去学习也得一周左右吧，不抬杠，学过之后再来回话。"大牛请忽略"）
-
-### 返回目录:[全网各大厂iOS面试题-题集大全](https://github.com/LGBamboo/iOS-Advanced)
