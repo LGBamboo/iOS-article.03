@@ -1,3 +1,5 @@
+### 返回目录:[全网各大厂iOS面试题-题集大全](https://github.com/LGBamboo/iOS-Advanced)
+
 # 什么是离屏渲染？什么情况下会触发？该如何应对？
 
 离屏渲染就是在当前屏幕缓冲区以外，新开辟一个缓冲区进行操作。
@@ -42,3 +44,11 @@
     *   圆角，同时设置 layer.masksToBounds = YES、layer.cornerRadius大于0
     *   考虑通过 CoreGraphics 绘制裁剪圆角，或者叫美工提供圆角图片
     *   阴影，layer.shadowXXX，如果设置了 layer.shadowPath 就不会产生离屏渲染
+
+### 返回目录:[全网各大厂iOS面试题-题集大全](https://github.com/LGBamboo/iOS-Advanced)
+
+***
+### 更多精选大厂 · iOS面试题答案PDF文集
+
+![](https://upload-images.jianshu.io/upload_images/17495317-e01b6f4e054727b7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+* 获取加小编的iOS技术交流圈：**[937 194 184](https://jq.qq.com/?_wv=1027&k=5PARXCI)**，直接获取
