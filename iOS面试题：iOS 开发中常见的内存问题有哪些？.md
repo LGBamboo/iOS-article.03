@@ -1,3 +1,5 @@
+### 返回目录:[全网各大厂iOS面试题-题集大全](https://github.com/LGBamboo/iOS-Advanced)
+
 # iOS开发中常见的内存问题有哪些？
 
 内存问题主要包括两个部分，一个是iOS中常见循环引用导致的内存泄露 ，另外就是大量数据加载及使用导致的内存警告。
@@ -267,6 +269,8 @@ GCD 提供的定时器叫 dispatch_source_t。使用方式如下：
 *   集成 [MLeaksFinder](https://github.com/Tencent/MLeaksFinder)。
 
 更多信息参加：[iOS App 稳定性指标及监测](https://juejin.im/post/58ca0832a22b9d006418fe43)
+
+### 返回目录:[全网各大厂iOS面试题-题集大全](https://github.com/LGBamboo/iOS-Advanced)
 
 ***
 ### 更多精选大厂 · iOS面试题答案PDF文集
