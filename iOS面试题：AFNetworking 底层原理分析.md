@@ -20,3 +20,5 @@ AFNetworking主要是对NSURLSession和NSURLConnection(iOS9.0废弃)的封装,�
 8). AFHTTPResponseSerializer; 万能解析器; JSON和XML之外的数据类型,直接返回二进制数据.对服务器返回的数据不做任何处理.
 
 9). AFXMLParserResponseSerializer; XML解析器;
+
+### 返回目录:[全网各大厂iOS面试题-题集大全](https://github.com/LGBamboo/iOS-Advanced)
