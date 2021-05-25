@@ -1,3 +1,5 @@
+### 返回目录:[全网各大厂iOS面试题-题集大全](https://github.com/LGBamboo/iOS-Advanced)
+
 # SDWebImage原理
 
 ### SDWebImage
@@ -236,6 +238,8 @@ imageURLStorageKey:{state:url}
 * 8.图片解压操作：这一操作可以查看SDWebImageDecoder.m中+decodedImageWithImage方法的实现。
 * 9.对GIF图片的处理
 * 10.对WebP图片的处理。
+
+### 返回目录:[全网各大厂iOS面试题-题集大全](https://github.com/LGBamboo/iOS-Advanced)
 
 ***
 ### 更多精选大厂 · iOS面试题答案PDF文集
